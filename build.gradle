@@ -9,6 +9,13 @@ repositories {
     mavenCentral()
 }
 
+//jdk 버전을 직접 지정하고 싶은 경우의 설정 ( javac 까지 의 경로 지정 )
+    //compileJava.options.fork = true
+    //compileJava.options.forkOptions.executable = 'C:/Java/jdk-17.0.1/bin/javac'
+//jdck 버전을 지정하고 싶은 경우
+    //sourceCompatibility = 1.8
+    //targetCompatibility = 1.8
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 

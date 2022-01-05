@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class TestGson {
 
     @Test
-    public void gson으로문자열변환_후_다시객체로변환(){
+    public void object_string_object_with_gson(){
         Gson gson = new Gson();
         Foo foo = new Foo(1,"first");
 
@@ -20,7 +20,7 @@ public class TestGson {
     }
 
 //    @Test
-//    public void gson으로json객체변환() {
+//    public void obj_to_json_with_gson() {
 //        Gson gson = new Gson();
 //        Foo foo = new Foo(1,"first");
 //
