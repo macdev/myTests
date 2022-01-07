@@ -171,7 +171,7 @@ Promise.all([prom1, prom2]).then((result)=>{
 
 #### 콜백이용
 
-```renderscript
+```javascript
 var ajax = function(option){
   setTimeout(function(){
     option.callback(option.data*2);
@@ -206,7 +206,7 @@ ajax({
 
 #### 함수 분리
 
-```renderscript
+```javascript
 var ajax = function(option){
   setTimeout(function(){
     option.callback(option.data*2);
@@ -244,7 +244,7 @@ ajax({
 
 #### Promise 사용
 
-```renderscript
+```javascript
 var prom1 = function(val){
   return new Promise((resolve, reject) => {
     setTimeout(()=>{
@@ -308,7 +308,7 @@ console.log(Func(arr));
 
 배열, 객체 합치기로도 사용가능
 
-```renderscript
+```javascript
 let aa = ['a','b','c'];
 let bb = ['d','e','f'];
 console.log([...aa, ...bb]);
